@@ -69,8 +69,8 @@ push        "dhcp-option DNS 8.8.4.4"
 # However, it doesn't assign a gateway when using
 # VMware guest-only networking.
 #
-# push        "redirect-gateway def1 bypass-dhcp"
-push        "redirect-gateway bypass-dhcp"
+push        "redirect-gateway def1 bypass-dhcp"
+# push        "redirect-gateway bypass-dhcp"
 push        "route-metric 512"
 push        "route 0.0.0.0 0.0.0.0"
 user        nobody
@@ -101,9 +101,9 @@ push        "dhcp-option DNS 8.8.4.4"
 # However, it doesn't assign a gateway when using
 # VMware guest-only networking.
 #
-# push        "redirect-gateway def1 bypass-dhcp"
+push        "redirect-gateway def1 bypass-dhcp"
 
-push        "redirect-gateway bypass-dhcp"
+# push        "redirect-gateway bypass-dhcp"
 push        "route-metric 512"
 push        "route 0.0.0.0 0.0.0.0"
 
